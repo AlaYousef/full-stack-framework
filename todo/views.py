@@ -2,8 +2,6 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Item
 from .forms import ItemForm
 
-# Create your views here.
-
 
 def get_todo_list(request):
     items = Item.objects.all()
@@ -14,7 +12,6 @@ def get_todo_list(request):
 
 
 def add_item(request):
-    # create item to db
     if request.method == 'POST':
         form = ItemForm(request.POST)
         if form.is_valid():
@@ -24,7 +21,6 @@ def add_item(request):
     context = {
         'form': form
     }
-    # read from db
     return render(request, 'todo/add_item.html', context)
 
 
