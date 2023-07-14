@@ -34,7 +34,6 @@ ALLOWED_HOSTS = ['8000-alayousef-full-stack-fra-s85jo8xb95.us2.codeanyapp.com',
                  'full-stack-frame-app-6e344300517e.herokuapp.com']
 
 
-
 # Application definition
 
 INSTALLED_APPS = [
