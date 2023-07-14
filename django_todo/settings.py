@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-=-wn*x27_vn$p15il!o3qt(nq4*e0w&n7bm73lw-5ha_i9@c0+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-alayousef-full-stack-fra-s85jo8xb95.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['alaa-django-todo-app-961d9b8f3769.herokuapp.com']
 
 
 # Application definition
@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #       'ENGINE': 'django.db.backends.sqlite3',
 #       'NAME': BASE_DIR / 'db.sqlite3',
 #   }
-#}
+# }
 
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
@@ -130,4 +130,3 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
